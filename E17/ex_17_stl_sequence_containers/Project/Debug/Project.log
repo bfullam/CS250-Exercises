@@ -1,4 +1,4 @@
-﻿Build started 11/15/15 10:28:14 PM.
+﻿Build started 11/16/15 9:31:47 AM.
      1>Project "Z:\Users\bryanfullam\Documents\CS250-Exercises\E17\ex_17_stl_sequence_containers\Project\Project.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
@@ -10,4 +10,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.29
+Time Elapsed 00:00:01.51

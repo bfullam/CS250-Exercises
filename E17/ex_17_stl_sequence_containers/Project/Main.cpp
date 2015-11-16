@@ -1,3 +1,11 @@
+/*
+	Fullam, Bryan
+	CS A250
+	November 16, 2015
+
+	Exercise 17
+*/
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -320,39 +328,107 @@ int main()
 
 	cout << "\n(The next output section is determined by your implementation.)\n\n";
 
+	cout << "list 1: ";
+	printList(intLis1);
+	cout << endl;
+
+	cout << "list 2: ";
+	printList(intLis2);
+	cout << endl;
+
+	intLis3.push_back(1);
+	intLis3.push_back(2);
+	intLis3.push_back(3);
+	cout << "list 3: ";
+	printList(intLis3);
+	cout << endl;
+
 	// void assign (InputIterator first, InputIterator last);
+	intLis1.assign(intLis2.begin(), intLis2.end());
+	cout << "list 1 after assign: ";
+	printList(intLis1);
 
 	// void assign (size_type n, const value_type& val);
+	intLis1.assign(5, 3);
+	cout << "list 1 after second assign: ";
+	printList(intLis1);
 
 	// const_reference back() const;
 	// (Notice that this back function returns a reference.)
+	cout << "list 2 back(): " << intLis2.back();
+	cout << endl;
 
 	// void clear() noexcept;
+	cout << "list 1 after clear():";
+	intLis1.clear();
+	printList(intLis1);
 
 	// bool empty() const noexcept;
+	cout << "list 1 empty(): " << intLis1.empty() << endl;
 
 	// const_reference front() const;
+	cout << "list 2 front(): " << intLis2.front() << endl;
 
 	// iterator insert (const_iterator position, const value_type& val);
 	// (Notice that this insert function returns an iterator.)
+	intLis1.insert(intLis1.begin(), 5);
+	intLis1.insert(intLis1.begin(), 4);
+	intLis1.insert(intLis1.begin(), 3);
+	cout << "list 1 after insert: ";
+	printList(intLis1);
 
 	// void pop_back();
+	intLis1.pop_back();
+	cout << "list 1 after pop_back: ";
+	printList(intLis1);
 
 	// void pop_front();
+	intLis1.pop_front();
+	cout << "list 1 after pop_front: ";
+	printList(intLis1);
 
 	// void push_front (const value_type& val);
+	intLis1.push_front(1);
+	intLis1.push_front(1);
+	intLis1.push_front(2);
+	cout << "list 1 after push_front: ";
+	printList(intLis1);
 
 	// void remove (const value_type& val);
+	intLis1.remove(1);
+	cout << "list 1 after remove: ";
+	printList(intLis1);
 
 	// void reverse() noexcept;
+	intLis1.reverse();
+	cout << "list 1 after reverse: ";
+	printList(intLis1);
 
 	// void splice (const_iterator position, list& x);
+	intLis1.splice(intLis1.begin(), intLis3);
+	cout << "list 1 after splice 1: ";
+	printList(intLis1);
 
 	// void splice (const_iterator position, list& x, const_iterator i);
+	intLis1.splice(intLis1.begin(), intLis2, intLis2.begin());
+	cout << "list 1 after splice 2: ";
+	printList(intLis1);
 	
 	// void splice (const_iterator position, list& x, const_iterator first, const_iterator last);
+	intLis1.splice(intLis1.begin(), intLis2, intLis2.begin(), intLis2.end());
+	cout << "list 1 after splice 3: ";
+	printList(intLis1);
 
 	// void swap (list& x);
+	cout << "list 1 before swap ";
+	printList(intLis1);
+
+	cout << "list 3 before swap ";
+	printList(intLis3);
+
+	intLis1.swap(intLis3);
+	cout << "list 1 after swap ";
+	printList(intLis1);
 
 	
 	cout << "\n\n----------------------------------------------------";
