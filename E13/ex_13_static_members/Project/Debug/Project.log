@@ -1,0 +1,18 @@
+﻿Build started 10/27/15 9:34:37 PM.
+     1>Project "W:\CS250\Exercises\E13\ex_13_static_members\Project\Project.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt HotDogStand.cpp Main.cpp
+         HotDogStand.cpp
+         Generating Code...
+         Compiling...
+         Main.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"W:\CS250\Exercises\E13\ex_13_static_members\Debug\Project.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"W:\CS250\Exercises\E13\ex_13_static_members\Debug\Project.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"W:\CS250\Exercises\E13\ex_13_static_members\Debug\Project.lib" /MACHINE:X86 Debug\HotDogStand.obj
+         Debug\Main.obj
+         Project.vcxproj -> W:\CS250\Exercises\E13\ex_13_static_members\Debug\Project.exe
+     1>Done Building Project "W:\CS250\Exercises\E13\ex_13_static_members\Project\Project.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.40

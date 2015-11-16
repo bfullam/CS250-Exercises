@@ -1,0 +1,85 @@
+/*	Fullam, Bryan
+	CS A250
+	August 29, 2015
+
+	Project 1
+
+*/
+
+//Definition function fillArray
+void fillArray(int array[], int& size)
+{
+	int temp = 0;
+	size = 0;
+
+	cout << "Please enter no more than 20 positive integers, then type a negative integer when done." << endl;
+
+	do
+	{
+		
+		cin >> temp;
+		array[size] = temp;
+		size++;
+	} while (size <= CAPACITY && temp > 0);
+
+	size -= 1;
+}
+
+//Definition function printArray
+void printArray(const int array[], int& size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		cout << array[i];
+	}
+}
+
+//Definition function insertAtIndex
+void insertAtIndex(int array[], int& size, int& element, const int index)
+{
+	if (size >= CAPACITY)
+	{
+		cerr << "Array is full. Cannot insert another element." << endl;
+	}
+	else if (index > CAPACITY)
+	{
+		cerr << "The array cannot have more than " << CAPACITY << " elements." << endl;
+	}
+	else if (index > size)
+	{
+		cerr << "You can only insert contiguous elements in the array." << endl;
+	}
+	else
+	{
+		int temp = array[index];
+		array[index] = element;
+		for (int i = index + 1; i < CAPACITY; i++)
+		{
+			array[i] = temp;
+			temp = array[i + 1];
+		}
+	}
+}
+
+OUTPUT:
+
+Please enter no more than 20 positive integers, then type a negative integer whe
+n done.
+1
+2
+3
+4
+-5
+
+Array elements: 1 2 3 4
+
+TEST insertAtIndex ----------------------------
+
+Enter a number to insert: 6
+Enter the index where to place the number: 2
+
+Array is now: 1 2 6 3
+
+Again (y/n)? n
+
+Press any key to continue . . .
